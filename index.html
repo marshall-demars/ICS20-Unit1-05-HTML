@@ -1,37 +1,43 @@
 <!DOCTYPE html>
-<!-- ICS2O-Unit1-05-HTML -->
+<!-- ICS2O-Unit1-05-HTML-MDL -->
 <html lang="en-ca">
   <head>
     <meta charset="utf-8">
     <meta name="description" content="My first webpage, with MDL">
     <meta name="keywords" content="mths, ics2o">
-    <meta name="author" content="Marshall">
+    <meta name="author" content="Mr. Coxall">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.brown-green.min.css" />
     <title>My first webpage, with MDL</title>
   </head>
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <div class = "mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class = "mdl-layout__header">
+        <div class = "mdl-layout__header-row">      
+          <span class = "mdl-layout-title">Material Design Lite</span>          
+        </div>       
+      </header>
+      <main class = "mdl-layout__content">
         <!-- Simple Textfield for integers-->
         <form action="#">
           <div class="mdl-textfield mdl-js-textfield">
             <!-- input pattern attribute -->
             <input class="mdl-textfield__input" type="text" pattern="[0-9]*" id="demo-input" />
             <!-- mdl-textfield__label -->
-            <label class="mdl-textfield__label" for="demo-input">Hello</label>
-            <!-- class "mdl-textfield__error" -->
-            <span class="mdl-textfield__error">Input is not a number</span>
+            <label class="mdl-textfield__label" for="demo-input">type</label>
           </div>
         </form>
-      <!-- FAB button -->
-      <button class="mdl-button mdl-js-button mdl-button--fab">
-        <i class="material-icons">add</i>
-      </button>
-      <p>
-        <a href="./index2.html">My index2.html page</a>
-      </p>
+        <!-- Raised button with ripple -->
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+          MDL
+        </button>
+        <p></p>
+        <p>
+          <a href="./index2.html">My index2.html page</a>
+        </p>
+      </main>
     </div>
   </body>
 </html>
